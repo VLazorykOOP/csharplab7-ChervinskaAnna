@@ -36,6 +36,7 @@
             this.saveFileDialogButton = new System.Windows.Forms.Button();
             this.convertToGrayScaleButton = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.drawRandomShapesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +103,7 @@
             // 
             this.convertToGrayScaleButton.Location = new System.Drawing.Point(276, 272);
             this.convertToGrayScaleButton.Name = "convertToGrayScaleButton";
-            this.convertToGrayScaleButton.Size = new System.Drawing.Size(132, 50);
+            this.convertToGrayScaleButton.Size = new System.Drawing.Size(118, 50);
             this.convertToGrayScaleButton.TabIndex = 6;
             this.convertToGrayScaleButton.Text = "Grayscale";
             this.convertToGrayScaleButton.UseVisualStyleBackColor = true;
@@ -117,11 +118,22 @@
             this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
             // 
+            // drawRandomShapesButton
+            // 
+            this.drawRandomShapesButton.Location = new System.Drawing.Point(96, 353);
+            this.drawRandomShapesButton.Name = "drawRandomShapesButton";
+            this.drawRandomShapesButton.Size = new System.Drawing.Size(232, 65);
+            this.drawRandomShapesButton.TabIndex = 8;
+            this.drawRandomShapesButton.Text = "Draw Random Shapes";
+            this.drawRandomShapesButton.UseVisualStyleBackColor = true;
+            this.drawRandomShapesButton.Click += new System.EventHandler(this.drawRandomShapesButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1195, 553);
+            this.Controls.Add(this.drawRandomShapesButton);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.convertToGrayScaleButton);
             this.Controls.Add(this.saveFileDialogButton);
@@ -149,5 +161,6 @@
         private System.Windows.Forms.Button saveFileDialogButton;
         private System.Windows.Forms.Button convertToGrayScaleButton;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Button drawRandomShapesButton;
     }
 }
